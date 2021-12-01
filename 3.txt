@@ -1,0 +1,14 @@
+public String processTrafficLightSignal(String color) { 
+    String processTrafficLightSignal = "unknown";
+    if (color == "зелёный") {
+    processTrafficLightSignal = "можно ехать";
+    }
+    else if ((color == "жёлтый") || (color =="красный")) {
+    processTrafficLightSignal = "стой";
+    }
+    else {
+      processTrafficLightSignal = "перезапросить датчики"; 
+    }
+    return processTrafficLightSignal;
+
+    }
